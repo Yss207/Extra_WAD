@@ -1,0 +1,22 @@
+<div class="container" style="text-align: center;">
+    <h2>Login Form</h2>
+    <form action="" method="post">
+
+        <input type="email" id="email" name="email" placeholder="Enter email" [(ngModel)]="loginUser.email">
+
+        <br>
+        <br>
+
+        <input type="password" id="password" name="password" placeholder="Enter password" [(ngModel)]="loginUser.password">
+
+        <br>
+        <br>
+
+        <button type="submit" (click)="onLogin()">Login</button>
+
+        <br>
+        <br>
+
+        <a routerLink = '/register'>Go to Register</a>
+    </form>
+</div>
