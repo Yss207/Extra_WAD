@@ -12,64 +12,62 @@
 </head>
 
 <body>
-	<!-- HOME PAGE -->
-	<div data-role="page" id="home">
-
+	<!-- Register Page -->
+	<div data-role="page" id="register" data-theme="a">
 		<div data-role="header">
-			<h1>AutoNova</h1>
+			<h1>Register</h1>
 		</div>
-
 		<div data-role="content">
-
-			<h2>Welcome to AutoNova Showroom</h2>
-
-			<p>Discover innovation on wheels. At AutoNova, we bring you premium cars with power, performance, and style.
-			</p>
-
-			<img src="https://images.unsplash.com/photo-1647340764627-11713b9d0f65?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-				alt="Showroom Cars" style="width:100%;margin-top:10px;">
-
-			<a href="#moreinfo" class="ui-btn ui-btn-b ui-corner-all" style="margin: top 10px;;">
-				Explore More &
-				Subscribe
-			</a>
-		</div>
-
-		<div data-role="footer">
-			<h4>&copy; 2025 AutoNova Motors</h4>
-		</div>
-
-	</div>
-
-	<!-- MORE INFO PAGE -->
-	<div data-role="page" id="moreinfo">
-
-		<div data-role="header">
-			<h1>About AutoNova</h1>
-		</div>
-
-		<div data-role="content">
-			<h2>Why Choose AutoNova?</h2>
-
-			<p>We offer a curated selection of high-performance vehicles, expert guidance, and unmatched after-sales
-				service. Whether you're looking for speed, luxury, or both — we have the perfect car for you.</p>
-
-			<h3 style="margin-top:1 0px;">📬 Stay in the Loop</h3>
-			<p>Subscribe to get updates on new models, test drive events, and exclusive offers.</p>
-
 			<form>
-				<label for="email">Your Email:</label>
-				<input type="email" name="email" id="email" placeholder="Enter your email">
-				<input type="submit" value="Subscribe" class="ui-btn ui-btn-a ui-corner-all">
+				<label for="new-username">Username:</label>
+				<input type="text" name="new-username" id="new-username" placeholder="Enter username">
+	
+				<label for="new-password">Password:</label>
+				<input type="password" name="new-password" id="new-password" placeholder="Enter password">
+	
+				<input type="submit" value="Register" class="ui-btn ui-corner-all ui-shadow">
 			</form>
-
-			<a href="#home" class="ui-btn ui-corner-all">⬅ Back to Home</a>
+			<a href="#login" class="ui-btn ui-corner-all ui-shadow">Already have an account? Login</a>
 		</div>
-
-		<div data-role="footer">
-			<h4>Follow us @AutoNovaMotors</h4>
+		<div data-role="footer" data-position="fixed">
+			<h4>&copy; 2025 MyApp</h4>
 		</div>
-
+	</div>
+	
+	<!-- Login Page -->
+	<div data-role="page" id="login" data-theme="a">
+		<div data-role="header">
+			<h1>Login</h1>
+		</div>
+		<div data-role="content">
+			<form>
+				<label for="username">Username:</label>
+				<input type="text" name="username" id="username" placeholder="Enter username">
+	
+				<label for="password">Password:</label>
+				<input type="password" name="password" id="password" placeholder="Enter password">
+	
+				<a href="#home" class="ui-btn ui-corner-all ui-shadow">Login</a>
+			</form>
+			
+		</div>
+		<div data-role="footer" data-position="fixed">
+			<h4>&copy; 2025 MyApp</h4>
+		</div>
+	</div>
+	
+	<!-- Home Page -->
+	<div data-role="page" id="home" data-theme="a">
+		<div data-role="header">
+			<h1>Home</h1>
+		</div>
+		<div data-role="content">
+			<p>Welcome to the Home Page!</p>
+			<a href="#login" class="ui-btn ui-corner-all ui-shadow">Go to Login Page</a>
+		</div>
+		<div data-role="footer" data-position="fixed">
+			<h4>&copy; 2025 MyApp</h4>
+		</div>
 	</div>
 </body>
 
